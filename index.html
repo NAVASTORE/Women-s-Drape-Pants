@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women's Drape Pants - AZIZI.STORE</title>
+    <meta name="description" content="Tampil effortless chic dengan Women’s Drape Pants. Potongan longgar dengan drapery lembut membuat penampilan terlihat modern, stylish, dan tetap nyaman di setiap kesempatan.">
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    
+    <!-- Custom Styles -->
+    <style>
+        :root {
+            --brown-dark: #654321;
+            --brown-medium: #8b4513;
+            --tan: #d2691e;
+            --cream: #f5f5dc;
+            --sage: #87a96b;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .hero-bg {
+            background: linear-gradient(rgba(101, 67, 33, 0.7), rgba(139, 69, 19, 0.7)), url('https://assets.onepagecdn.com/files/0baa8c07103c847932fa395af01f9aec/2xgu4nnjq92xg26u1egjw2w0y.webp') no-repeat center center;
+            background-size: cover;
+        }
+        
+        .product-showcase {
+            background: linear-gradient(to bottom, #fff 0%, #f5f5dc 100%);
+        }
+        
+        .benefits-section {
+            background: linear-gradient(to bottom, #f5f5dc 0%, #fff 100%);
+        }
+        
+        .pricing-section {
+            background: linear-gradient(to bottom, #fff 0%, #f5f5dc 100%);
+        }
+        
+        .order-section {
+            background: linear-gradient(to bottom, #f5f5dc 0%, #fff 100%);
+        }
+        
+        .btn-primary {
+            background: linear-gradient(to right, var(--brown-medium), var(--tan));
+            color: white;
+            border-radius: 50px;
+            padding: 15px 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(139, 69, 19, 0.3);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(139, 69, 19, 0.4);
+        }
+        
+        .price-original {
+            text-decoration: line-through;
+            color: #999;
+        }
+        
+        .price-discount {
+            color: var(--sage);
+            font-weight: 700;
+        }
+        
+        .gallery-item {
+            transition: all 0.3s ease;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .social-proof-popup {
+            position: fixed;
+            top: 20px;
+            right: -400px;
+            z-index: 9999;
+            background: white;
+            border-left: 4px solid var(--sage);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 15px;
+            width: 350px;
+            transition: right 0.5s ease;
+        }
+        
+        .social-proof-popup.show {
+            right: 20px;
+        }
+        
+        .avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--tan);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+        
+        /* OrderOnline Form Customization */
+        .ooef {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .ooef input, .ooef select, .ooef textarea {
+            font-family: 'Roboto', sans-serif;
+            border-radius: 8px;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+        }
+        
+        .ooef button {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, var(--brown-medium), var(--tan));
+            color: white;
+            border-radius: 50px;
+            padding: 15px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .ooef button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(139, 69, 19, 0.4);
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .social-proof-popup {
+                width: 300px;
+                right: -350px;
+            }
+            
+            .social-proof-popup.show {
+                right: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Social Proof Popup -->
+    <div id="socialProofPopup" class="social-proof-popup">
+        <div class="flex items-center">
+            <div class="avatar mr-3" id="customerAvatar">V</div>
+            <div>
+                <p class="font-medium text-sm" id="notificationText">Vina dari Jakarta baru saja memesan Women's Drape Pants</p>
+                <p class="text-xs text-gray-500 mt-1" id="notificationTime">5 menit yang lalu</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-bg h-screen flex items-center">
+        <div class="container mx-auto px-4 text-center text-white">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4" data-aos="fade-up">Women's Drape Pants</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="200">Tampil effortless chic dengan potongan longgar dan drapery lembut</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4 mb-10" data-aos="fade-up" data-aos-delay="400">
+                <div class="flex items-center justify-center bg-black bg-opacity-30 px-4 py-2 rounded-full">
+                    <i data-feather="truck" class="mr-2"></i>
+                    <span>Gratis Ongkir</span>
+                </div>
+                <div class="flex items-center justify-center bg-black bg-opacity-30 px-4 py-2 rounded-full">
+                    <i data-feather="shield" class="mr-2"></i>
+                    <span>Garansi 7 Hari</span>
+                </div>
+                <div class="flex items-center justify-center bg-black bg-opacity-30 px-4 py-2 rounded-full">
+                    <i data-feather="refresh-cw" class="mr-2"></i>
+                    <span>Gratis Retur</span>
+                </div>
+            </div>
+            <button class="btn-primary mx-auto" data-aos="fade-up" data-aos-delay="600">
+                Pesan Sekarang - Hemat 50%
+            </button>
+        </div>
+    </section>
+
+    <!-- Product Showcase -->
+    <section class="product-showcase py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12" data-aos="fade-up">Galeri Produk</h2>
+            
+            <div class="flex flex-col items-center space-y-8 mb-16">
+                <div class="gallery-item w-full max-w-2xl" data-aos="fade-up">
+                    <img src="https://assets.onepagecdn.com/files/c1c3c326e04011160fbb91c2839c4f5a/3x01xqahhujvzzd3q3ucx6onb.gif" alt="Women's Drape Pants - Tampilan Depan" class="w-full rounded-lg">
+                </div>
+                <div class="gallery-item w-full max-w-2xl" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://assets.onepagecdn.com/files/7319b677798fe87c3d6f9eb7be412472/3x01xqahhujvzzd3q3ucx6onb1.gif" alt="Women's Drape Pants - Tampilan Belakang" class="w-full rounded-lg">
+                </div>
+                <div class="gallery-item w-full max-w-2xl" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://assets.onepagecdn.com/files/b333979b3adc8e8dd919984641ad44df/4x006d1x4eqfpq7fq2j9axxmf.webp" alt="Detail Bahan" class="w-full rounded-lg">
+                </div>
+                <div class="gallery-item w-full max-w-2xl" data-aos="fade-up" data-aos-delay="300">
+                    <img src="https://assets.onepagecdn.com/files/fd77578e804ec95e8d319d553ae0e7bc/5xcn5crr08v56vq7dxf256l7r.webp" alt="Detail Pinggang" class="w-full rounded-lg">
+                </div>
+                <div class="gallery-item w-full max-w-2xl" data-aos="fade-up" data-aos-delay="400">
+                    <img src="https://assets.onepagecdn.com/files/4faf12f991877ca4fd7602ef294a02de/6m8nbwnjyjacmx90dqx7dp8ue.webp" alt="Detail Lipatan" class="w-full rounded-lg">
+                </div>
+                <div class="gallery-item w-full max-w-2xl" data-aos="fade-up" data-aos-delay="500">
+                    <img src="https://assets.onepagecdn.com/files/5396a2c55f2ae73602e5f24831b465de/6q9ydeh9wxy9920jhjazet7c8.webp" alt="Detail Panjang" class="w-full rounded-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits & Features -->
+    <section class="benefits-section py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12" data-aos="fade-up">Mengapa Memilih Women's Drape Pants?</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i data-feather="droplet" class="text-amber-800"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Bahan Lembut & Breathable</h3>
+                    <p>Bahan premium yang nyaman dipakai seharian tanpa gerah</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i data-feather="users" class="text-amber-800"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Desain Flowy</h3>
+                    <p>Cocok untuk berbagai bentuk tubuh dengan siluet yang elegan</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i data-feather="layers" class="text-amber-800"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Mudah Dipadukan</h3>
+                    <p>Bisa dipadukan dengan atasan casual maupun formal</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing & Promo -->
+    <section class="pricing-section py-20">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/2 p-8">
+                        <h2 class="text-3xl font-bold mb-4">Penawaran Spesial</h2>
+                        <div class="mb-6">
+                            <span class="price-original text-2xl mr-4">Rp 358.698</span>
+                            <span class="price-discount text-3xl">Rp 179.349</span>
+                        </div>
+                        <p class="text-green-700 font-bold mb-6">Hemat 50% untuk waktu terbatas!</p>
+                        
+                        <div class="bg-amber-50 border-l-4 border-amber-500 p-4 mb-6">
+                            <p class="font-bold">Penawaran berakhir dalam:</p>
+                            <div class="flex justify-between mt-2">
+                                <div class="text-center">
+                                    <div class="text-2xl font-bold" id="hours">24</div>
+                                    <div class="text-sm">Jam</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-2xl font-bold" id="minutes">00</div>
+                                    <div class="text-sm">Menit</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-2xl font-bold" id="seconds">00</div>
+                                    <div class="text-sm">Detik</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <button class="btn-primary w-full">
+                            Pesan Sekarang
+                        </button>
+                    </div>
+                    <div class="md:w-1/2 bg-amber-50 flex items-center justify-center p-8">
+                        <img src="https://assets.onepagecdn.com/files/6ca7051599585a275461eae96b4f4948/78kkvbvocn9nc67wtgwj8o396.webp" alt="Women's Drape Pants" class="rounded-lg shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Form -->
+    <section class="order-section py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12" data-aos="fade-up">Pesan Sekarang</h2>
+            
+            <div class="max-w-2xl mx-auto">
+                <!-- OrderOnline Embed Code - v8.0.4 -->
+                <div class="ooef">
+                    <form class="orderonline-embed-form" data-username="nava" data-product-slug="womens-drape-pants" data-product-id="68bee9fcc36e88c9b302e2ad" id="oo-embed-form-womens-drape-pants-930" data-origin="orderonline">
+                        <div class="ooef-loader">
+                            <style>
+                                .ooef-loader{visibility: hidden;opacity: 0;position: absolute;left: 0;right: 0;top: 0;bottom: 0;display: flex;justify-content: center;align-items: center;flex-direction: column;animation: ooLoadingIn 10s ease;-webkit-animation: ooLoadingIn 10s ease;animation-fill-mode: forwards;overflow: hidden}
+                                @keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}
+                                @-webkit-keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}
+                                .ooef-loader>div,.ooef-loader>div:after{border-radius: 50%;width: 2.5rem;height: 2.5rem}
+                                .ooef-loader>div{font-size: 10px;position: relative;text-indent: -9999em;border: .25rem solid #f5f5f5;border-left: .25rem solid #55c4cf;-webkit-transform: translateZ(0);-ms-transform: translateZ(0);transform: translateZ(0);-webkit-animation: ooLoading 1.1s infinite linear;animation: ooLoading 1.1s infinite linear}
+                                .ooef-loader.error>div{border-left: .25rem solid #ff4500;animation-duration: 5s}
+                                @-webkit-keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}
+                                @keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}
+                            </style>
+                            <div aria-live="polite" role="status">
+                                <div>Loading...</div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <script>
+                    if (typeof xLogError != 'function') {
+                        var xLogError = function (error) {
+                            var req = new XMLHttpRequest();
+                            var payload = JSON.stringify({ url: document.location.href, line: error.line, stack: error.stack });
+                            var params = 'message=' + encodeURIComponent(error.name) + '&payload=' + encodeURIComponent(payload) + '&type=embed&level=error';
+                            req.open('POST', 'https://api.orderonline.id/log', true);
+                            req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+                            req.send(params);
+                        };
+                    }
+                    try {
+                        if (typeof xEmbedScript != 'function') {
+                            var xEmbedScript = function () {
+                                !function(w, d, e, v, id, t, s) {
+                                    if (d.getElementById(id)) return;
+                                    t = d.createElement(e);t.async = !0;t.src = v;t.id = id;
+                                    s = d.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s);
+                                }(window, document, 'script', 'https://cdn.orderonline.id/js/embed-v2-slim.min.js?v=8.0.4', 'oo-embed-js');
+                            };
+                        }
+                        if (typeof xEmbedInit != 'function') {
+                            var xEmbedInit = function (w, n) {
+                                if (w.ooe) return;
+                                n = w.ooe = function() { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments) };
+                                if (!w._ooe) w._ooe = n;
+                                n.push = n;n.loaded = !0;n.version = '8.0.4';n.queue = [];
+                            };
+                        }
+                        xEmbedInit(window);
+                        ooe('setup', 'redirect', 'https://nava.orderonline.id');
+                        ooe('init', '5f119cd08dcbdb2737678706', '68bee9fcc36e88c9b302e2ad', '68bee9fcc36e88c9b302e2ae', 'oo-embed-form-womens-drape-pants-930', {"mode":"page","action":"Klik untuk pemesanan","title":"Form Pemesanan","triggerPixel":true,"triggerGtm":true});
+                        if (!window.jQuery) {
+                            !function(w, d, e, v, id, t, s) {
+                                if (d.getElementById(id)) return;
+                                t = d.createElement(e);t.async = !0;t.src = v;t.id = id;
+                                t.addEventListener('load', xEmbedScript);
+                                s = d.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s);
+                            }(window, document, 'script', 'https://cdn.orderonline.id/js/vendor/jquery.min.js', 'oo-embed-jquery');
+                        } else {
+                            xEmbedScript();
+                        }
+                    } catch (e) {
+                        xLogError(e);
+                        throw e;
+                    }
+                </script>
+                <!-- End OrderOnline Embed Code -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script>
+        // Initialize Feather Icons
+        feather.replace();
+        
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out'
+        });
+        
+        // Countdown Timer
+        function updateCountdown() {
+            const hoursElement = document.getElementById('hours');
+            const minutesElement = document.getElementById('minutes');
+            const secondsElement = document.getElementById('seconds');
+            
+            let hours = 1;
+            let minutes = 0;
+            let seconds = 0;
+            
+            const countdownInterval = setInterval(() => {
+                if (seconds === 0) {
+                    if (minutes === 0) {
+                        if (hours === 0) {
+                            clearInterval(countdownInterval);
+                            return;
+                        }
+                        hours--;
+                        minutes = 59;
+                    } else {
+                        minutes--;
+                    }
+                    seconds = 59;
+                } else {
+                    seconds--;
+                }
+                
+                hoursElement.textContent = hours.toString().padStart(2, '0');
+                minutesElement.textContent = minutes.toString().padStart(2, '0');
+                secondsElement.textContent = seconds.toString().padStart(2, '0');
+            }, 1000);
+        }
+        
+        updateCountdown();
+        
+        // Social Proof Popup
+        const customers = ['Vina', 'Dina', 'Kartika', 'Lestari', 'Putri', 'Maya Sari', 'Rani', 'Permata', 'Lestari F'];
+        const cities = ['Jakarta', 'Surabaya', 'Bandung', 'Medan', 'Bekasi', 'Tangerang', 'Depok', 'Semarang'];
+        const popup = document.getElementById('socialProofPopup');
+        const notificationText = document.getElementById('notificationText');
+        const notificationTime = document.getElementById('notificationTime');
+        const customerAvatar = document.getElementById('customerAvatar');
+        
+        let popupInterval;
+        let hideTimeout;
+        
+        function getRandomCustomer() {
+            const customer = customers[Math.floor(Math.random() * customers.length)];
+            const city = cities[Math.floor(Math.random() * cities.length)];
+            const minutesAgo = Math.floor(Math.random() * 15) + 1;
+            
+            return {
+                name: customer,
+                city: city,
+                minutesAgo: minutesAgo
+            };
+        }
+        
+        function showPopup() {
+            const customer = getRandomCustomer();
+            
+            notificationText.textContent = `${customer.name} dari ${customer.city} baru saja memesan Women's Drape Pants`;
+            notificationTime.textContent = `${customer.minutesAgo} menit yang lalu`;
+            customerAvatar.textContent = customer.name.charAt(0);
+            
+            popup.classList.add('show');
+            
+            hideTimeout = setTimeout(() => {
+                popup.classList.remove('show');
+            }, 5000);
+        }
+        
+        function startPopupSequence() {
+            // Show first popup after 3 seconds
+            setTimeout(showPopup, 3000);
+            
+            // Then show every 8 seconds
+            popupInterval = setInterval(showPopup, 8000);
+        }
+        
+        // Pause hiding when hovering over popup
+        popup.addEventListener('mouseenter', () => {
+            clearTimeout(hideTimeout);
+        });
+        
+        popup.addEventListener('mouseleave', () => {
+            hideTimeout = setTimeout(() => {
+                popup.classList.remove('show');
+            }, 5000);
+        });
+        
+        // Start the popup sequence
+        startPopupSequence();
+        
+        // Scroll to order form when CTA button is clicked
+        document.querySelectorAll('.btn-primary').forEach(button => {
+            button.addEventListener('click', (e) => {
+                e.preventDefault();
+                const orderSection = document.querySelector('.order-section');
+                orderSection.scrollIntoView({ behavior: 'smooth' });
+                
+                // If it's the hero button, also trigger the form
+                if (button.closest('.hero-bg')) {
+                    const orderForm = document.querySelector('.orderonline-embed-form');
+                    if (orderForm) {
+                        orderForm.scrollIntoView({ behavior: 'smooth' });
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
